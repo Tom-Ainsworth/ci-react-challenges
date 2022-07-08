@@ -2,7 +2,7 @@ import React from "react";
 import css from "./css/PostItem.module.css";
 
 function PostItem(props) {
-	const savedPosts = props.savedPosts;
+	const savedPosts = props.posts;
 	return savedPosts.map((post) => {
 		const { name, title, description, image } = post;
 		return (

@@ -1,10 +1,15 @@
 import css from "./App.module.css";
-import SearchBar from "./components/SearchBar";
+import Content from "./components/Content";
+import NavBarForm from "./components/NavBarForm";
+import NavBarSimple from "./components/NavBarSimple";
+import Sidebar from "./components/Sidebar";
 
 function App() {
 	return (
 		<div className={css.App}>
-			<SearchBar />
+			<NavBarForm />
+			<Sidebar />
+			<Content />
 		</div>
 	);
 }
