@@ -25,7 +25,6 @@ export class ContentApi extends Component {
 			const fetchedPosts = response.data.hits;
 			this.setState({ isLoaded: true, posts: fetchedPosts, savedPosts: fetchedPosts });
 		});
-		// const fetchedPosts =
 	}
 
 	handleChange = (e) => {
@@ -49,7 +48,7 @@ export class ContentApi extends Component {
 							placeholder="By Author"
 							name="searchInput"
 							onChange={(e) => this.handleChange(e)}
-						></input>
+						/>
 						<h4>posts found: {this.state.posts.length}</h4>
 					</form>
 				</div>
